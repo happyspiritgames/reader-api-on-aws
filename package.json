@@ -1,0 +1,14 @@
+{
+  "name": "storytime-player-on-aws",
+  "version": "1.0.0",
+  "description": "App for playing StoryTime that is hosted on AWS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Happy Spirit Games",
+  "license": "MIT",
+  "devDependencies": {
+    "claudia": "^5.1.0"
+  }
+}

@@ -1,18 +1,6 @@
 const { errorMessage, internalError } = require('./errors')
 const storyAccess = require('../s3repo/storyAccess')
 
-const editionModel = {
-  getEdition: (key) => {
-    return { editionKey: key }
-  },
-  getEditionScene: (key, sceneId) => {
-    return {
-      editionKey: key,
-      editionSceneKey: sceneId
-    }
-  }
-}
-
 /**
  * Returns the cover information for the given story edition key.
  *

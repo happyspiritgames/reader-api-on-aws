@@ -1,4 +1,5 @@
 const { internalError } = require('./errors')
+const storyAccess = require('../s3repo/storyAccess')
 
 const editionModel = {
   getLatestEditions: () => [ { editionKey: 'blargy' }, { editionKey: 'wumpus' } ]
@@ -12,13 +13,11 @@ const editionModel = {
  * @param {*} req the request object
  * @param {*} res the response object
  */
-exports.searchStories = (req, res) => {
+exports.searchStories = async (req, res) => {
   console.log('library.searchStories')
   try {
-    res.json(editionModel.getLatestEditions())
-    // editionModel.getLatestEditions().then((latest) => {
-    //   res.json(latest)
-    // })
+    const publishedStories = await storyAccess.getPublished()
+    res.json(publishedStories)
   } catch (e) {
     console.error('Problem finding published stories', e)
     res.status(500).send(internalError)

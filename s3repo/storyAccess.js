@@ -9,13 +9,32 @@ exports.getStoryEdition = async (editionKey) => {
       Bucket: 'hsg-storytime-storyrepo',
       Key: `published/${editionKey}.cover.json`
     }
-    const resultFromS3 = await s3.getObject(params).promise();
+    const resultFromS3 = await s3.getObject(params).promise()
     out = resultFromS3.Body.toString()
   } catch (err) {
     if (err.code === 'NoSuchKey') {
-      console.log('Requested key not found in S3 bucket:', editionKey)
+      console.log('Requested story not found in S3 bucket:', editionKey)
     } else {
-      console.log('Unexpected error:', err.code, err.message)
+      console.log('Unexpected error:', editionKey, err.code, err.message)
+    }
+  }
+  return out
+}
+
+exports.getEditionScene = async (editionKey, sceneId) => {
+  let out
+  try {
+    const params = {
+      Bucket: 'hsg-storytime-storyrepo',
+      Key: `published/${editionKey}.scene-${sceneId}.json`
+    }
+    const resultFromS3 = await s3.getObject(params).promise()
+    out = resultFromS3.Body.toString()
+  } catch (err) {
+    if (err.code === 'NoSuchKey') {
+      console.log('Requested scene not found in S3 bucket:', editionKey, sceneId)
+    } else {
+      console.log('Unexpected error:', editionKey, sceneId, err.code, err.message)
     }
   }
   return out

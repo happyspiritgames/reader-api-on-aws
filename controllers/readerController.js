@@ -21,16 +21,18 @@ const editionModel = {
  */
 exports.getStoryEdition = async (req, res) => {
   const { editionKey } = req.params
-  console.log('storyController.getStoryEdition', editionKey)
+  console.log('readerController.getStoryEdition', editionKey)
   try {
     const storyEdition = await storyAccess.getStoryEdition(editionKey)
     if (storyEdition) {
       res.json(storyEdition)
     } else {
-      res.status(404).json(errorMessage('Could not find a story-game with the given key'))
+      res.status(404).json(
+        errorMessage(`Could not find story: ${editionKey}`)
+      )
     }
   } catch (e) {
-    console.error('Problem getting story edition', e)
+    console.error('Problem getting story', e)
     res.status(500).json(internalError)
   }
 }
@@ -41,20 +43,20 @@ exports.getStoryEdition = async (req, res) => {
  * @param {*} req
  * @param {*} res
  */
-exports.getEditionScene = (req, res) => {
+exports.getEditionScene = async (req, res) => {
   const { editionKey, sceneId } = req.params
-  console.log('storyController.getEditionScene', editionKey, sceneId)
+  console.log('readerController.getEditionScene', editionKey, sceneId)
   try {
-    res.json(editionModel.getEditionScene(editionKey, sceneId))
-    // editionModel.getScene(editionKey, sceneId).then((scene) => {
-    //   if (scene) {
-    //     res.json(scene)
-    //   } else {
-    //     res.status(404).json(errorMessage('Scene not found'))
-    //   }
-    // })
+    const scene = await storyAccess.getEditionScene(editionKey, sceneId)
+    if (scene) {
+      res.json(scene)
+    } else {
+      res.status(404).json(
+        errorMessage(`Could not find scene: ${editionKey} ${sceneId}`)
+      )
+    }
   } catch (e) {
-    console.error('Problem getting scene for story', e)
+    console.error('Problem getting scene', e)
     res.status(500).send(internalError)
   }
 }

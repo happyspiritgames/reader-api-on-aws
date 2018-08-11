@@ -1,0 +1,16 @@
+{
+  "sceneId": "jpgqwhq1",
+  "title": "The Forgotten Trail",
+  "prose": "You glance down the street to see if anyone is looking.  The coast is clear.  Quickly you dash behind the building and slide through a gap in the wooden fence behind Headquarters.  You jump over a narrow ditch and land on the raised edge of the Forgotten Trail of the Ancients.  The trail is covered in small rocks.  On occasion, you have found a few rusty 10-inch spikes, no doubt the preferred tool of the ancients for hunting.  Today the path is clear.\nWalking down the Forgotten Trail, you approach one of your favorite outposts, Sky Tower.  From there you can get the lay of the land, and watch the locals going about their business.  It occurs to you that it would be a good idea to see who is about.  You want to avoid contact with any counter agents.\nSo you climb the ladder that leads to Sky Tower and push open the trapdoor.  The tower is empty.  From its windows, you see the backside of Headquarters along with other buildings.  You also see the back of the warehouse, where people are coming and going.  Next to the warehouse is the Jewel Emporium.  Standing outside the Emporium, you spot two agents in your spy network, Bob and Angel.  They must be on a mission of their own.  The building is blocking your view, so it is difficult to make out what they are up to.\nOutside a window of Sky Tower, there is a pole that reaches to the right.  If you slide along the pole, you might be able to see what’s going on.",
+  "endPrompt": "Do you dare?",
+  "signpost": [
+    {
+      "sceneId": "7m5sgsjw",
+      "teaser": "You have no time to lose. Continue on with to your mission."
+    },
+    {
+      "sceneId": "ktb0oc94",
+      "teaser": "Go out on a limb, and get a better view.  This might be important."
+    }
+  ]
+}

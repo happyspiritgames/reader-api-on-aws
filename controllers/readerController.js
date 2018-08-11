@@ -1,4 +1,5 @@
 const { errorMessage, internalError } = require('./errors')
+const storyAccess = require('../s3repo/storyAccess')
 
 const editionModel = {
   getEdition: (key) => {
@@ -22,7 +23,9 @@ exports.getStoryEdition = (req, res) => {
   const { editionKey } = req.params
   console.log('storyController.getStoryEdition', editionKey)
   try {
-    res.json(editionModel.getEdition(editionKey))
+    const storyEdition = storyAccess.getStoryEdition(editionKey)
+    res.json(storyEdition)
+    // res.json(editionModel.getEdition(editionKey))
     // editionModel.getEdition(editionKey).then((edition) => {
     //   if (edition) {
     //     res.json(edition)

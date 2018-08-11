@@ -14,28 +14,24 @@ const editionModel = {
 }
 
 /**
- * Returns the summary of the given story edition.
+ * Returns the cover information for the given story edition key.
  *
  * @param {*} req
  * @param {*} res
  */
-exports.getStoryEdition = (req, res) => {
+exports.getStoryEdition = async (req, res) => {
   const { editionKey } = req.params
   console.log('storyController.getStoryEdition', editionKey)
   try {
-    const storyEdition = storyAccess.getStoryEdition(editionKey)
-    res.json(storyEdition)
-    // res.json(editionModel.getEdition(editionKey))
-    // editionModel.getEdition(editionKey).then((edition) => {
-    //   if (edition) {
-    //     res.json(edition)
-    //   } else {
-    //     res.status(404).json(errorMessage('Story edition not found'))
-    //   }
-    // })
+    const storyEdition = await storyAccess.getStoryEdition(editionKey)
+    if (storyEdition) {
+      res.json(storyEdition)
+    } else {
+      res.status(404).json(errorMessage('Could not find a story-game with the given key'))
+    }
   } catch (e) {
     console.error('Problem getting story edition', e)
-    res.status(500).send(internalError)
+    res.status(500).json(internalError)
   }
 }
 

@@ -13,7 +13,7 @@ const editionModel = {
  * @param {*} res the response object
  */
 exports.searchStories = (req, res) => {
-  console.log('storyController.searchStories')
+  console.log('library.searchStories')
   try {
     res.json(editionModel.getLatestEditions())
     // editionModel.getLatestEditions().then((latest) => {

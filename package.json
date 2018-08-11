@@ -1,14 +1,23 @@
 {
-  "name": "storytime-player-on-aws",
-  "version": "1.0.0",
+  "name": "storytime-reader-on-aws",
+  "version": "0.1.0",
   "description": "App for playing StoryTime that is hosted on AWS.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "claudia create --version dev --region us-west-2 --api-module api",
+    "update": "claudia update",
+    "release": "claudia set-version --version production",
+    "start": "ntl"
   },
   "author": "Happy Spirit Games",
   "license": "MIT",
   "devDependencies": {
-    "claudia": "^5.1.0"
+    "claudia": "^5.1.0",
+    "ntl": "^3.0.0"
+  },
+  "dependencies": {
+    "aws-serverless-express": "^3.2.0",
+    "express": "^4.16.3"
   }
 }

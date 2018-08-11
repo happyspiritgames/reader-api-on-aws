@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "storytime-player-on-aws-executor",
+    "name": "storytime-player-on-aws",
+    "region": "us-west-2"
+  },
+  "api": {
+    "id": "xas8715nqi",
+    "module": "app"
+  }
+}

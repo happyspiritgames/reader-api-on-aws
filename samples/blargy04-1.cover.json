@@ -1,0 +1,17 @@
+{
+  "editionKey": "blargy04-1",
+  "storyId": "blargy04",
+  "version": "1",
+  "summary": {
+    "title": "Mr. Blargypants Loses It",
+    "penName": "The Wumpus",
+    "tagLine": "This time it's war.",
+    "about": "No more Mr. Niceguy. Now Mr. Blargypants is out for blood. Yours. What happened to the nice guy we used to know and love?",
+    "firstSceneId": "wumpus01"
+  },
+  "rating": "PG",
+  "publishedAt": "2018-08-13T00:07:56.482Z",
+  "genre": [
+    "mystery"
+  ]
+}

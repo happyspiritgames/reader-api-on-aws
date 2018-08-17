@@ -1,0 +1,17 @@
+{
+  "editionKey": "blargy02-2",
+  "storyId": "blargy02",
+  "version": "2",
+  "summary": {
+    "title": "The Return of Mr. Blargypants",
+    "penName": "The Wumpus",
+    "tagLine": "Mr. Blargypants is at it again. Now he is after your friends, too.",
+    "about": "I still don't get it. This is a real mystery.",
+    "firstSceneId": "wumpus01"
+  },
+  "rating": "PG",
+  "publishedAt": "2018-08-13T00:07:56.482Z",
+  "genre": [
+    "mystery"
+  ]
+}

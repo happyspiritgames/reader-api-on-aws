@@ -1,0 +1,17 @@
+{
+  "editionKey": "blargy03-1",
+  "storyId": "blargy03",
+  "version": "1",
+  "summary": {
+    "title": "The Revenge of Mr. Blargypants",
+    "penName": "The Wumpus",
+    "tagLine": "Now you have done it.",
+    "about": "Mr. Blargypants didn't appreciate where you left things last time. Now he wants to get what's coming to him and make you suffer in the process.",
+    "firstSceneId": "wumpus01"
+  },
+  "rating": "13",
+  "publishedAt": "2018-08-13T00:07:56.482Z",
+  "genre": [
+    "mystery"
+  ]
+}

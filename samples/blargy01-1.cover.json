@@ -1,0 +1,17 @@
+{
+  "editionKey": "blargy01-1",
+  "storyId": "blargy01",
+  "version": "1",
+  "summary": {
+    "title": "Mr. Blargypants",
+    "penName": "The Wumpus",
+    "tagLine": "Watch out for Mr. Blargypants. He's coming to get you.",
+    "about": "What the heck are blargypants.",
+    "firstSceneId": "wumpus01"
+  },
+  "rating": "PG",
+  "publishedAt": "2018-08-10T00:07:56.482Z",
+  "genre": [
+    "mystery"
+  ]
+}

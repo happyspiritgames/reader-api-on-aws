@@ -2,11 +2,13 @@ var AWS = require('aws-sdk');
 AWS.config.update({region: 'us-west-2'});
 s3 = new AWS.S3({apiVersion: '2006-03-01'});
 
+const s3BucketName = 'hsg-storytime-storyrepo'
+
 exports.getStoryEdition = async (editionKey) => {
   let out
   try {
     const params = {
-      Bucket: 'hsg-storytime-storyrepo',
+      Bucket: s3BucketName,
       Key: `published/${editionKey}.cover.json`
     }
     const resultFromS3 = await s3.getObject(params).promise()
@@ -25,7 +27,7 @@ exports.getEditionScene = async (editionKey, sceneId) => {
   let out
   try {
     const params = {
-      Bucket: 'hsg-storytime-storyrepo',
+      Bucket: s3BucketName,
       Key: `published/${editionKey}.scene-${sceneId}.json`
     }
     const resultFromS3 = await s3.getObject(params).promise()
@@ -46,7 +48,7 @@ exports.getPublished = async () => {
   try {
     // FIXME this will have performance issue - think of a different way to search and sort
     const params = {
-      Bucket: 'hsg-storytime-storyrepo',
+      Bucket: s3BucketName,
       Prefix: `published/`
     }
     const resultFromS3 = await s3.listObjects(params).promise()
@@ -65,4 +67,26 @@ exports.getPublished = async () => {
   }
   console.log('elapsed time', Date.now() - start)
   return out
+}
+
+exports.getRecommendations = async () => {
+  let out
+  try {
+    const listParams = {
+      Bucket: s3BucketName,
+      Prefix: `published/`
+    }
+    const resultFromS3 = await s3.listObjects(listParams).promise()
+    const covers = resultFromS3.Contents.filter(fileInfo => fileInfo.Key.includes('.cover.'))
+
+    let coverParams = {
+      Bucket: 'hsg-storytime-storyrepo',
+      Key: covers[0].Key
+    }
+    const coverResult = await s3.getObject(coverParams).promise()
+    out = JSON.parse(coverResult.Body.toString())
+  } catch (err) {
+    console.log('Unexpected error:', err.code, err.message)
+  }
+  return [out]
 }

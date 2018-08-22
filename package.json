@@ -14,12 +14,12 @@
   "author": "Happy Spirit Games",
   "license": "MIT",
   "devDependencies": {
-    "claudia": "^5.1.0",
+    "claudia": "^5.1.1",
     "ntl": "^3.0.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.291.0",
-    "aws-serverless-express": "^3.2.0",
+    "aws-sdk": "^2.298.0",
+    "aws-serverless-express": "^3.3.5",
     "cors": "^2.8.4",
     "express": "^4.16.3"
   }

@@ -8,6 +8,7 @@ const app = express()
 app.use(cors())
 
 app.get('/ping', admin.ping)
+app.get('/recommendations', library.getRecommendations)
 app.get('/stories', library.searchStories)
 app.get('/stories/:editionKey', reader.getStoryEdition)
 app.get('/stories/:editionKey/scenes/:sceneId', reader.getEditionScene)

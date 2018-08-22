@@ -23,3 +23,20 @@ exports.searchStories = async (req, res) => {
     res.status(500).send(internalError)
   }
 }
+
+/**
+ * Returns a list of recommended stories.
+ * 
+ * @param {*} req 
+ * @param {*} res 
+ */
+exports.getRecommendations = async (req, res) => {
+  console.log('library.getRecommendations')
+  try {
+    const recommendations = await storyAccess.getRecommendations()
+    res.json(recommendations)
+  } catch (e) {
+    console.error('Problem finding recommended stories', e)
+    res.status(500).send(internalError)
+  }
+}

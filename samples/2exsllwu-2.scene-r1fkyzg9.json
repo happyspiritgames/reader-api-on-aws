@@ -1,0 +1,16 @@
+{
+  "sceneId": "r1fkyzg9",
+  "title": "Dazzling Jewels of all Shapes and Sizes",
+  "prose": "You decide to join Bob and Angel on their mission.  This shouldn’t take too long, and then you can return to your prime objective.  The three of you head into the Emporium, with Angel in the lead and Bob behind you.  Your eyes take in the dazzling assortment of jewels, and an amazingly sweet smell fills your nose.\nNow that you have joined them, Bob and Angel confess that one problem remains.  They do not have any of the coins or notes they need to make a fair exchange.  You reach into your pocket and realize that you have the solution to their problem.  On one hand, you want to help their mission succeed, since you will get a share of the reward.  On the other hand, you have your own mission to complete.",
+  "endPrompt": "",
+  "signpost": [
+    {
+      "sceneId": "1k1ak3l4",
+      "teaser": "Help your friends. Exchange your coins and notes for jewels."
+    },
+    {
+      "sceneId": "3nxnmclv",
+      "teaser": "Leave the Emporium, and get back to your mission."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "sceneId": "1a0ned50",
+  "title": "A Chance Meeting",
+  "prose": "As you round the building, Bob and Angel call out and approach you with a warm greeting.  You go to school together, but that’s not the half of it.  They are also members of your spy network.  In fact, for your last mission, the three of you invaded Sky Tower and brought back crucial intelligence that led to the take-down of The Big Ugly.  But that’s a story for another day.\nToday, Bob and Angel are on a mission of their own, to liberate the Jewels of Rockland.  They invite you to join them.  The reward will be sweet.",
+  "endPrompt": "",
+  "signpost": [
+    {
+      "sceneId": "3nxnmclv",
+      "teaser": "Their mission looks like a lot of fun, but the Supreme Commander is probably getting impatient.  You had better stick to the plan."
+    },
+    {
+      "sceneId": "r1fkyzg9",
+      "teaser": "Sure, join forces, and you may end up with two wins instead of one."
+    }
+  ]
+}

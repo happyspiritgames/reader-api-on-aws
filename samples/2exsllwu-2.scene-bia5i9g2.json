@@ -1,0 +1,16 @@
+{
+  "sceneId": "bia5i9g2",
+  "title": "Behind Enemy Lines",
+  "prose": "As you exit the warehouse, your suspicions are up.  Better to take the Forgotten Trail back to Headquarters, just to be sure you are not being followed.  You press against the wall and slide toward the back.  Make a dash for the trail, jumping the ditch, and landing just shy of the bed of rocks that line the trail.  Whew.  From here, you should be able to proceed undetected.\nAs you stroll down the trail you think of stories from when this route was an active railroad.  Train cars full of goods were brought to the general store, and local smugglers had their piece of the action.  Different times, long before the town became lousy with spies.\nThinking of spies, you happened to be passing Sky Tower, a great place to search the landscape for counter agents.  Before making your approach to Headquarters, you might do well to take a quick look around.",
+  "endPrompt": "",
+  "signpost": [
+    {
+      "sceneId": "r2x7ycrs",
+      "teaser": "Just to be safe, climb Sky Tower, and make sure the coast is clear."
+    },
+    {
+      "sceneId": "xq6o1817",
+      "teaser": "Hurry straight back to Headquarters, and complete the mission."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "sceneId": "3nxnmclv",
+  "title": "Into the Warehouse",
+  "prose": "You know where your priorities lie. After all, you are one of the top agents, not some fly-by-night, and success is critical to ensure tranquility. Bravely, you approach the entrance of the warehouse, glance left and right, and step through the broad, inviting doors knowing only too well that this might be a trap.\nThe warehouse is surprisingly well lit. As you glance across the aisles, you notice that each is labeled. It seems that someone has grouped the items in storage by category: bread, baking, canned goods, and so on. You remember that the Golden Bars are kept along the outer walls that are also labeled: produce, meat, dairy. Eureka, you have found the Golden Bars. 2 packages will do. Now to make your escape.\nSure enough, as you approach the exit, you see that you are going to have to get past the guards. Placing the packages of Golden Bars on the beltway for a scanning, you reach into your pocket, and hand the guard the coins and notes. She returns some of the coins along with a slip of paper, no doubt an encrypted message for the Supreme Commander. The coins and message go into your pocket while the guard hides the Golden Bars in a plain paper sack.  Good thinking.  You wouldn’t want anyone to know what you are carrying.\nAs you leave the warehouse, it occurs to you that you might have been spotted by the enemy. Perhaps you should take a different route back to Headquarters.",
+  "endPrompt": "",
+  "signpost": [
+    {
+      "sceneId": "bia5i9g2",
+      "teaser": "Better safe than sorry. Take the Forgotten Trail that runs behind the warehouse."
+    },
+    {
+      "sceneId": "xq6o1817",
+      "teaser": "Stop being so paranoid. Your mission is nearly over, and you need to return quickly."
+    }
+  ]
+}

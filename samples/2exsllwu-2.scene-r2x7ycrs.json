@@ -1,0 +1,16 @@
+{
+  "sceneId": "r2x7ycrs",
+  "title": "Sky Tower",
+  "prose": "You need both hands to climb the ladder that leads into Sky Tower, so you grip the bag with your teeth. You push open the trap door in the floor, and heave yourself into the single room of the tower.\nFor the most part, the view from the tower is terrific. You spot Bob and Angel, still hanging around the Emporium. Everything else seems to be normal. Almost [i]too[/i] normal. You know that spies like to hang out in shadows, and the buildings offer plenty of hiding spots. To be sure, you can hang from a wooden pole that sticks out from the side of the tower.",
+  "endPrompt": "",
+  "signpost": [
+    {
+      "sceneId": "ktb0oc94",
+      "teaser": "Put down the bag of Golden Bars, and go out on a limb."
+    },
+    {
+      "sceneId": "xq6o1817",
+      "teaser": "Listen to that nagging feeling telling you to return to Headquarters."
+    }
+  ]
+}

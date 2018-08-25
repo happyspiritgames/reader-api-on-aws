@@ -1,0 +1,16 @@
+{
+  "sceneId": "s96t9bzl",
+  "title": "In Broad Daylight",
+  "prose": "The sun is shining brightly, with just a few wisps of clouds in the sky. The air is cool and refreshing. As you breathe in, the scene about you begins to pop. Across the street, some of the locals are deep in conversation. They are smiling and laughing, nothing to worry about. Others are going about their business. A few cars pass by up and down the slow, two-lane street. The usual.\nOn the next block, you bump into some friends of yours, Bob and Angel. You go to school together, but that’s not the half of it. They are also agents in your spy network. In fact, for your last mission, the three of you invaded Sky Tower and brought back crucial intelligence that led to the take-down of The Big Ugly. But that’s a story for another day.\nToday, Bob and Angel are on a mission of their own, to liberate the Jewels of Rockland. They invite you to join them. The reward will be sweet.",
+  "endPrompt": "",
+  "signpost": [
+    {
+      "sceneId": "3nxnmclv",
+      "teaser": "Stay the course, and keep walking toward your objective."
+    },
+    {
+      "sceneId": "r1fkyzg9",
+      "teaser": "Accept a side mission with Bob and Angel to liberate the jewels."
+    }
+  ]
+}

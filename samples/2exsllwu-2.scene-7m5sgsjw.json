@@ -1,0 +1,16 @@
+{
+  "sceneId": "7m5sgsjw",
+  "title": "Approach from the Back",
+  "prose": "Not one to be distracted for too long, you climb down the ladder, closing the trap door above you, and get back on the trail that runs behind the row of buildings.  It is a nice day, cool but not too cold, with wispy clouds high in the sky.  Before long, you are behind the Jewel Emporium where you saw Bob and Angel.  Next to the Emporium is the warehouse, the target of your mission.\nAlthough the mission is important, you cannot help but think of the untold treasures within the Emporium, and you wonder about the mission of your fellow spies.  As you walk up to the gap between the buildings, your instincts lead you to your decision.",
+  "endPrompt": "",
+  "signpost": [
+    {
+      "sceneId": "1a0ned50",
+      "teaser": "Sneak around to the right, toward the Emporium."
+    },
+    {
+      "sceneId": "3nxnmclv",
+      "teaser": "Sneak around to the left, toward the warehouse."
+    }
+  ]
+}
